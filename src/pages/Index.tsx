@@ -44,7 +44,7 @@ const Index = () => {
         const welcomeNotification = {
           id: `welcome-${Date.now()}`,
           type: 'info' as const,
-          title: 'Welcome to TransitKosovo',
+          title: 'Welcome to eTrafiku',
           message: 'Thank you for using our AI-powered public transport platform! Explore real-time transit data and plan your trips easily.',
           timestamp: new Date().toISOString(),
           read: false
