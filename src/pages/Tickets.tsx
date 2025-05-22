@@ -103,7 +103,7 @@ const Tickets = () => {
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold">Biletat e mija</h1>
           <Button onClick={() => setShowPurchaseDialog(true)}>
-            Buy New Ticket
+            Blejë tiket të re
           </Button>
         </div>
         
@@ -131,7 +131,7 @@ const Tickets = () => {
                   <h3 className="text-lg font-medium text-gray-900">No Active Tickets</h3>
                   <p className="mt-1 text-gray-500">You don't have any active tickets. Purchase a new ticket to get started.</p>
                   <Button className="mt-4" onClick={() => setShowPurchaseDialog(true)}>
-                    Buy New Ticket
+                    Blej biletë të re
                   </Button>
                 </div>
               )}
@@ -161,7 +161,7 @@ const Tickets = () => {
         <Dialog open={showPurchaseDialog} onOpenChange={setShowPurchaseDialog}>
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader>
-              <DialogTitle>Buy New Ticket</DialogTitle>
+              <DialogTitle>Blej biletë të re</DialogTitle>
             </DialogHeader>
             
             <div className="py-4">
