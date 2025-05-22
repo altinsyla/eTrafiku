@@ -16,7 +16,7 @@ interface Message {
 const INITIAL_MESSAGES: Message[] = [
   {
     id: '1',
-    content: 'Hello! I\'m your TransitKosovo assistant. How can I help you with your travel needs today?',
+    content: 'Hello! I\'m your e KOSOVA assistant. How can I help you with your travel needs today?',
     sender: 'ai',
     timestamp: new Date()
   }
@@ -139,7 +139,7 @@ export const AIAssistant: React.FC = () => {
       </SheetTrigger>
       <SheetContent className="sm:max-w-md flex flex-col p-0">
         <SheetHeader className="p-4 border-b">
-          <SheetTitle>TransitKosovo Assistant</SheetTitle>
+          <SheetTitle>e KOSOVA Assistant</SheetTitle>
         </SheetHeader>
         
         <div className="flex-1 overflow-y-auto p-4 space-y-4">

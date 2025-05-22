@@ -15,10 +15,10 @@ const Register = () => {
               <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1v-5h2.038A2.968 2.968 0 0113 9a3 3 0 013-3 2.72 2.72 0 01.535.06l1.9-1.9A1 1 0 1019.5 3a1 1 0 00-.192 1.493l-1.9 1.9A2.72 2.72 0 0117 7a3 3 0 01-3 3H8V5a1 1 0 00-1-1H3z" />
             </svg>
           </div>
-          <span className="font-bold text-xl">TransitKosovo</span>
+          <span className="font-bold text-xl">e KOSOVA</span>
         </Link>
         <h1 className="text-3xl font-bold mb-1">Create an Account</h1>
-        <p className="text-gray-600">Join TransitKosovo for seamless public transport</p>
+        <p className="text-gray-600">Join e KOSOVA for seamless public transport</p>
       </div>
       
       <RegisterForm />
