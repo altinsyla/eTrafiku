@@ -150,7 +150,7 @@ const Index = () => {
         {/* Hero Section */}
         <section className="mb-8">
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold mb-2">Welcome to Kosovo Transit</h1>
+            <h1 className="text-4xl font-bold mb-2">Welcome to eTrafiku</h1>
             <p className="text-xl text-gray-600 mb-6">
               Plan your journey, track vehicles in real-time, and buy tickets for public transportation across Kosovo.
             </p>
@@ -160,7 +160,7 @@ const Index = () => {
                 <form onSubmit={handleRouteSearch}>
                   <h2 className="text-xl font-semibold mb-4">Find Routes</h2>
                   <div className="space-y-4">
-                    <div>
+                    {/* <div>
                       <Label htmlFor="from">From</Label>
                       <Input 
                         id="from"
@@ -179,7 +179,7 @@ const Index = () => {
                         placeholder="Enter destination"
                         required
                       />
-                    </div>
+                    </div> */}
                     <Button type="submit" className="w-full">
                       <Search className="mr-2" size={18} />
                       Search
