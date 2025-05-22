@@ -43,7 +43,7 @@ export function LoginForm() {
   return (
     <Card className="w-full max-w-md mx-auto">
       <CardHeader>
-        <CardTitle className="text-center">Login to TransitKosovo</CardTitle>
+        <CardTitle className="text-center">Login to eKosova</CardTitle>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleLogin} className="space-y-4">
