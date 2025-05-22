@@ -238,16 +238,16 @@ const TransitMap: React.FC<MapProps> = ({ center = KOSOVO_CENTER, zoom = 9 }) =>
 
           {selectedBus.delay > 0 && (
             <div className="mt-2 py-1 px-2 bg-red-50 text-red-700 text-sm rounded">
-              Delayed by {selectedBus.delay} minutes
+              Vonese prej {selectedBus.delay} minuta
             </div>
           )}
 
           <div className="mt-4 flex justify-between">
             <button className="px-3 py-1 bg-primary text-white rounded-md text-sm">
-              Buy Ticket
+              Blej tiketë
             </button>
             <button className="px-3 py-1 bg-secondary text-white rounded-md text-sm">
-              Trip Details
+              Detajet e udhëtimit
             </button>
           </div>
         </div>

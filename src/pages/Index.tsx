@@ -89,7 +89,7 @@ const Index = () => {
       const personalizedWelcome = {
         id: `personal-welcome-${Date.now()}`,
         type: 'info' as const,
-        title: `Welcome, ${userName}!`,
+        title: `Miresevini, ${userName}!`,
         message: 'Your personalized transport experience is ready. Tap on the map to see real-time bus positions.',
         timestamp: new Date().toISOString(),
         read: false
@@ -120,13 +120,13 @@ const Index = () => {
                       </svg>
                     </div>
                   </div>
-                  <h2 className="text-2xl font-bold text-center">Welcome to TransitKosovo</h2>
+                  <h2 className="text-2xl font-bold text-center">Miresevini ne eTrafiku</h2>
                   <p className="text-center text-gray-600 mt-2">The AI-powered public transport platform for Kosovo.</p>
                 </div>
                 
                 <form onSubmit={handleWelcomeSubmit}>
                   <div className="mb-4">
-                    <label htmlFor="name" className="block mb-1 font-medium">Your Name</label>
+                    <label htmlFor="name" className="block mb-1 font-medium">Emri juaj</label>
                     <input
                       type="text"
                       id="name"
@@ -139,7 +139,7 @@ const Index = () => {
                   </div>
                   
                   <Button type="submit" className="w-full">
-                    Get Started
+                    Fillo.
                   </Button>
                 </form>
               </CardContent>
@@ -150,15 +150,15 @@ const Index = () => {
         {/* Hero Section */}
         <section className="mb-8">
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold mb-2">Welcome to eTrafiku</h1>
+            <h1 className="text-4xl font-bold mb-2">Miresevini ne eTrafiku</h1>
             <p className="text-xl text-gray-600 mb-6">
-              Plan your journey, track vehicles in real-time, and buy tickets for public transportation across Kosovo.
+              Planifikoni udhëtimin tuaj, gjurmoni automjetet në kohë reale dhe blini bileta për transportin publik nëpër Kosovë.
             </p>
             
             <Card className="max-w-2xl mx-auto">
               <CardContent className="p-6">
                 <form onSubmit={handleRouteSearch}>
-                  <h2 className="text-xl font-semibold mb-4">Find Routes</h2>
+                  <h2 className="text-xl font-semibold mb-4">Gjeni Rrugët</h2>
                   <div className="space-y-4">
                     {/* <div>
                       <Label htmlFor="from">From</Label>
@@ -182,7 +182,7 @@ const Index = () => {
                     </div> */}
                     <Button type="submit" className="w-full">
                       <Search className="mr-2" size={18} />
-                      Search
+                      Kërko
                     </Button>
                   </div>
                 </form>
@@ -196,15 +196,15 @@ const Index = () => {
           <div className="flex justify-between items-center mb-4">
             <TabsList>
               <TabsTrigger value="map">Live Map</TabsTrigger>
-              <TabsTrigger value="planner">Trip Planner</TabsTrigger>
+              <TabsTrigger value="planner">Planifikuesi i udhëtimit</TabsTrigger>
             </TabsList>
             
             <div className="hidden md:flex gap-2">
               <Button variant="outline" size="sm" onClick={() => navigate('/tickets')}>
-                Buy Tickets
+                Blej biletë
               </Button>
               <Button size="sm" onClick={() => navigate('/planner')}>
-                Check Schedules
+                Shiko oraret
               </Button>
             </div>
           </div>
@@ -219,11 +219,11 @@ const Index = () => {
                 <div className="flex flex-col md:flex-row gap-4">
                   <Card className="flex-1">
                     <CardContent className="p-4">
-                      <h3 className="font-medium mb-2">Live Traffic Status</h3>
+                      <h3 className="font-medium mb-2">Gjendja e trafikut Live</h3>
                       <div className="flex justify-between text-sm">
                         <div>
-                          <div className="font-medium text-green-600">Low Traffic</div>
-                          <div className="text-gray-500">Most routes running normally</div>
+                          <div className="font-medium text-green-600">Trafik i qetë</div>
+                          <div className="text-gray-500">Te gjitha udhët po operojnë normalisht</div>
                         </div>
                         <div className="flex items-center">
                           <span className="inline-block w-3 h-3 bg-green-500 rounded-full mr-1"></span>
@@ -236,23 +236,23 @@ const Index = () => {
                   
                   <Card className="flex-1">
                     <CardContent className="p-4">
-                      <h3 className="font-medium mb-2">Active Routes</h3>
+                      <h3 className="font-medium mb-2">Rruget Aktive</h3>
                       <div className="text-3xl font-bold text-primary">
                         {activeBuses + activeTrains}
-                        <span className="text-sm font-normal text-gray-500 ml-2">routes operating</span>
+                        <span className="text-sm font-normal text-gray-500 ml-2">udhetime po operohen</span>
                       </div>
-                      <div className="text-sm text-gray-500 mt-1">2 routes with delays</div>
+                      <div className="text-sm text-gray-500 mt-1">2 udhëtime me vonesa</div>
                     </CardContent>
                   </Card>
                   
                   <Card className="flex-1">
                     <CardContent className="p-4">
-                      <h3 className="font-medium mb-2">Vehicles in Service</h3>
+                      <h3 className="font-medium mb-2">Mjetet në shërbim</h3>
                       <div className="text-3xl font-bold text-secondary">
                         {activeBuses + activeTrains}
-                        <span className="text-sm font-normal text-gray-500 ml-2">active vehicles</span>
+                        <span className="text-sm font-normal text-gray-500 ml-2">mjete aktive</span>
                       </div>
-                      <div className="text-sm text-gray-500 mt-1">96% of fleet operational</div>
+                      <div className="text-sm text-gray-500 mt-1">96% të flotës operacionale</div>
                     </CardContent>
                   </Card>
                 </div>
@@ -262,9 +262,9 @@ const Index = () => {
             {/* Popular Routes Section */}
             <section className="mt-8">
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-2xl font-bold">Popular Routes</h2>
+                <h2 className="text-2xl font-bold">Udhëtimet më aktive</h2>
                 <Button variant="link" onClick={() => navigate('/planner')}>
-                  View All Routes <ArrowRight className="ml-1" size={16} />
+                  Shiko të gjitha udhëtimet <ArrowRight className="ml-1" size={16} />
                 </Button>
               </div>
               
@@ -276,7 +276,7 @@ const Index = () => {
                         <div>
                           <h3 className="font-semibold text-lg">{route.name}</h3>
                           <p className="text-sm text-gray-600">
-                            {route.type === 'bus' ? 'Bus' : 'Train'} · Route #{route.lineNumber}
+                            {route.type === 'bus' ? 'Bus' : 'Train'} · Udhëtimi #{route.lineNumber}
                           </p>
                         </div>
                         <div className="bg-gray-200 rounded-full p-2">
@@ -317,7 +317,7 @@ const Index = () => {
                       </div>
                       
                       <div className="flex justify-between items-center border-t border-b py-2 my-2">
-                        <p className="text-sm">Occupancy</p>
+                        <p className="text-sm">Ngarkuëshmeria</p>
                         <div className="flex items-center">
                           <div className="w-24 h-2 bg-gray-200 rounded-full mr-2">
                             <div 
@@ -336,10 +336,10 @@ const Index = () => {
                         <p className="text-lg font-bold">€{route.price.toFixed(2)}</p>
                         <div className="flex gap-2">
                           <Button variant="outline" size="sm" onClick={() => navigate(`/planner?route=${route.id}`)}>
-                            Details
+                            Detajet
                           </Button>
                           <Button size="sm" onClick={() => navigate(`/tickets?route=${route.id}`)}>
-                            Buy Ticket
+                            Blej biletë
                           </Button>
                         </div>
                       </div>
@@ -351,7 +351,7 @@ const Index = () => {
             
             {/* Real-time Info Section */}
             <section className="mt-8 mb-8">
-              <h2 className="text-2xl font-bold mb-4">Real-time Transportation</h2>
+              <h2 className="text-2xl font-bold mb-4">Transporti në kohë reale</h2>
               <Card>
                 <CardContent className="p-6">
                   <div className="grid md:grid-cols-2 gap-6">
@@ -359,15 +359,15 @@ const Index = () => {
                       <h3 className="text-lg font-semibold mb-3">Live Map</h3>
                       <div className="space-y-2 mb-6">
                         {[
-                          'Pristina Central Station',
-                          'Vushtrri Bus Station',
-                          'Mitrovica Bus Terminal',
-                          'Pristina Central Station',
-                          'University of Pristina',
-                          'Gjilan Bus Station',
-                          'Pristina Railway Station',
-                          'Fushe Kosove Station',
-                          'Peja Railway Station'
+                          'Prishtinë, Stacioni i autobusëve',
+                          'Vushtrri, Stacioni i autobusëve',
+                          'Mitrovica, Stacioni i autobusëve',
+                          'Prishtine, Stacioni qendror',
+                          'Universiteti i Prishtinës',
+                          'Gjilan, Stacioni i autobusëve',
+                          'Prishtinë, Stacioni hekurudhor',
+                          'Fushe Kosove, Stacioni',
+                          'Peja, Stacioni hekurudhor'
                         ].map((stop, index) => (
                           <div key={index} className="flex items-center">
                             <CircleDot className="h-4 w-4 mr-2 text-primary" />
@@ -376,36 +376,36 @@ const Index = () => {
                         ))}
                       </div>
                       
-                      <h3 className="text-lg font-semibold mb-3">Legend</h3>
+                      <h3 className="text-lg font-semibold mb-3">Legjenda</h3>
                       <div className="space-y-2">
                         <div className="flex items-center">
                           <Bus className="h-5 w-5 mr-2 text-blue-500" />
-                          <span>Bus</span>
+                          <span>Autobus</span>
                         </div>
                         <div className="flex items-center">
                           <Train className="h-5 w-5 mr-2 text-purple-500" />
-                          <span>Train</span>
+                          <span>Tren</span>
                         </div>
                         <div className="flex items-center">
                           <CircleDot className="h-5 w-5 mr-2 text-primary" />
-                          <span>Stop</span>
+                          <span>Ndalje</span>
                         </div>
                       </div>
                     </div>
                     
                     <div>
-                      <h3 className="text-lg font-semibold mb-4">Real-time Status</h3>
+                      <h3 className="text-lg font-semibold mb-4">Statusi në kohë reale</h3>
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="bg-blue-50 p-4 rounded-lg text-center">
-                          <h4 className="text-sm text-gray-600">Active Buses</h4>
+                          <h4 className="text-sm text-gray-600">Autobusë aktivë</h4>
                           <p className="text-3xl font-bold text-blue-600">{activeBuses}</p>
                         </div>
                         <div className="bg-purple-50 p-4 rounded-lg text-center">
-                          <h4 className="text-sm text-gray-600">Active Trains</h4>
+                          <h4 className="text-sm text-gray-600">Tren aktivë</h4>
                           <p className="text-3xl font-bold text-purple-600">{activeTrains}</p>
                         </div>
                         <div className="bg-gray-50 p-4 rounded-lg text-center">
-                          <h4 className="text-sm text-gray-600">Total Stops</h4>
+                          <h4 className="text-sm text-gray-600">Numri total i ndaljeve</h4>
                           <p className="text-3xl font-bold text-gray-800">{totalStops}</p>
                         </div>
                       </div>

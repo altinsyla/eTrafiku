@@ -44,8 +44,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   
   const navItems = [
     { path: '/', label: 'Home', icon: 'Home' },
-    { path: '/tickets', label: 'Tickets', icon: 'Ticket' },
-    { path: '/planner', label: 'Trip Planner', icon: 'Map' },
+    { path: '/tickets', label: 'Biletat', icon: 'Ticket' },
+    { path: '/planner', label: 'Planifikuesi i udhëtimit', icon: 'Map' },
   ];
   
   return (

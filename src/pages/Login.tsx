@@ -15,10 +15,10 @@ const Login = () => {
               <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1v-5h2.038A2.968 2.968 0 0113 9a3 3 0 013-3 2.72 2.72 0 01.535.06l1.9-1.9A1 1 0 1019.5 3a1 1 0 00-.192 1.493l-1.9 1.9A2.72 2.72 0 0117 7a3 3 0 01-3 3H8V5a1 1 0 00-1-1H3z" />
             </svg>
           </div>
-          <span className="font-bold text-xl">TransitKosovo</span>
+          <span className="font-bold text-xl">eTrafiku</span>
         </Link>
-        <h1 className="text-3xl font-bold mb-1">Welcome back</h1>
-        <p className="text-gray-600">Log in to access your account</p>
+        <h1 className="text-3xl font-bold mb-1">Mirë se erdhet</h1>
+        <p className="text-gray-600">Ju lutem jepni të dhënat për t'u qasur në platformë</p>
       </div>
       
       <LoginForm />
@@ -27,13 +27,13 @@ const Login = () => {
         <p className="text-gray-600">
           Don't have an account?{' '}
           <Link to="/register" className="text-primary hover:underline">
-            Create one
+            Krijo një
           </Link>
         </p>
         
         <Link to="/">
           <Button variant="link" className="mt-4">
-            Back to Home
+            Kthehuni në Home
           </Button>
         </Link>
       </div>

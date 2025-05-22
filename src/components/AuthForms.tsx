@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -20,21 +19,20 @@ export function LoginForm() {
     setIsLoading(true);
     
     try {
-      // This is a mock login - in a real app, we would connect to a backend
+      // Ky është një autentifikim fiktiv - në një aplikacion real lidhet me backend
       setTimeout(() => {
-        // Mock login success
         setUserProfile({
           id: `user-${uuidv4()}`,
           name: email.split('@')[0],
           email: email,
-          preferredLanguage: 'en'
+          preferredLanguage: 'sq'
         });
-        
-        toast.success('Logged in successfully');
+
+        toast.success('U kyçët me sukses');
         navigate('/');
       }, 1000);
     } catch (error) {
-      toast.error('Login failed. Please check your credentials.');
+      toast.error('Kyçja dështoi. Ju lutem kontrolloni kredencialet.');
     } finally {
       setIsLoading(false);
     }
@@ -43,7 +41,7 @@ export function LoginForm() {
   return (
     <Card className="w-full max-w-md mx-auto">
       <CardHeader>
-        <CardTitle className="text-center">Login to eKosova</CardTitle>
+        <CardTitle className="text-center">Kyçu në eKosova</CardTitle>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleLogin} className="space-y-4">
@@ -54,12 +52,12 @@ export function LoginForm() {
               type="email" 
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@example.com" 
+              placeholder="ju@example.com" 
               required
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
+            <Label htmlFor="password">Fjalëkalimi</Label>
             <Input 
               id="password" 
               type="password"
@@ -70,7 +68,7 @@ export function LoginForm() {
             />
           </div>
           <Button type="submit" className="w-full" disabled={isLoading}>
-            {isLoading ? 'Logging in...' : 'Login'}
+            {isLoading ? 'Duke u kyçur...' : 'Kyçu'}
           </Button>
         </form>
       </CardContent>
@@ -90,28 +88,27 @@ export function RegisterForm() {
     e.preventDefault();
     
     if (password !== confirmPassword) {
-      toast.error('Passwords do not match');
+      toast.error('Fjalëkalimet nuk përputhen');
       return;
     }
-    
+
     setIsLoading(true);
     
     try {
-      // This is a mock registration - in a real app, we would connect to a backend
+      // Ky është një regjistrim fiktiv - në një aplikacion real lidhet me backend
       setTimeout(() => {
-        // Mock registration success
         setUserProfile({
           id: `user-${uuidv4()}`,
           name: name,
           email: email,
-          preferredLanguage: 'en'
+          preferredLanguage: 'sq'
         });
-        
-        toast.success('Registration successful!');
+
+        toast.success('Regjistrimi u krye me sukses!');
         navigate('/');
       }, 1000);
     } catch (error) {
-      toast.error('Registration failed. Please try again.');
+      toast.error('Regjistrimi dështoi. Ju lutem provoni përsëri.');
     } finally {
       setIsLoading(false);
     }
@@ -120,12 +117,12 @@ export function RegisterForm() {
   return (
     <Card className="w-full max-w-md mx-auto">
       <CardHeader>
-        <CardTitle className="text-center">Create an Account</CardTitle>
+        <CardTitle className="text-center">Krijo një Llogari</CardTitle>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleRegister} className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="name">Full Name</Label>
+            <Label htmlFor="name">Emri i Plotë</Label>
             <Input 
               id="name" 
               value={name}
@@ -141,12 +138,12 @@ export function RegisterForm() {
               type="email" 
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@example.com" 
+              placeholder="ju@example.com" 
               required
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
+            <Label htmlFor="password">Fjalëkalimi</Label>
             <Input 
               id="password" 
               type="password"
@@ -157,7 +154,7 @@ export function RegisterForm() {
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="confirmPassword">Confirm Password</Label>
+            <Label htmlFor="confirmPassword">Konfirmo Fjalëkalimin</Label>
             <Input 
               id="confirmPassword" 
               type="password"
@@ -168,7 +165,7 @@ export function RegisterForm() {
             />
           </div>
           <Button type="submit" className="w-full" disabled={isLoading}>
-            {isLoading ? 'Creating account...' : 'Create Account'}
+            {isLoading ? 'Duke krijuar llogarinë...' : 'Krijo Llogari'}
           </Button>
         </form>
       </CardContent>

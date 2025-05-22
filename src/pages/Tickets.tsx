@@ -101,7 +101,7 @@ const Tickets = () => {
     <Layout>
       <div className="container mx-auto px-4 py-6">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-2xl font-bold">My Tickets</h1>
+          <h1 className="text-2xl font-bold">Biletat e mija</h1>
           <Button onClick={() => setShowPurchaseDialog(true)}>
             Buy New Ticket
           </Button>
@@ -109,8 +109,8 @@ const Tickets = () => {
         
         <Tabs defaultValue="active" className="w-full">
           <TabsList className="mb-4">
-            <TabsTrigger value="active">Active Tickets</TabsTrigger>
-            <TabsTrigger value="history">Ticket History</TabsTrigger>
+            <TabsTrigger value="active">Bileta aktive</TabsTrigger>
+            <TabsTrigger value="history">Historia e biletave</TabsTrigger>
           </TabsList>
           
           <TabsContent value="active">

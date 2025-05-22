@@ -32,23 +32,23 @@ export interface TransitRoute {
 export const POPULAR_ROUTES: TransitRoute[] = [
   {
     id: 'route-1',
-    name: 'Pristina - Mitrovica',
+    name: 'Prishtinë - Mitrovica',
     type: 'bus',
     lineNumber: '1',
     color: '#3b82f6',
     from: {
-      name: 'Pristina Central Station',
+      name: 'Prishtinë, Stacioni i autobusëve',
       coordinates: [42.6629, 21.1655],
       departureTime: '18:00'
     },
     to: {
-      name: 'Mitrovica Bus Terminal',
+      name: 'Mitrovicë, Stacioni i autobusëve',
       coordinates: [42.8911, 20.8665],
       arrivalTime: '19:30'
     },
     intermediateStops: [
       {
-        name: 'Vushtrri Bus Station',
+        name: 'Vushtrri, Stacioni i autobusëve',
         coordinates: [42.8269, 20.9703],
         arrivalTime: '18:45',
         departureTime: '18:50'
@@ -68,23 +68,23 @@ export const POPULAR_ROUTES: TransitRoute[] = [
   },
   {
     id: 'route-2',
-    name: 'Pristina - Gjilan',
+    name: 'Prishtinë - Gjilan',
     type: 'bus',
     lineNumber: '2',
     color: '#10b981',
     from: {
-      name: 'Pristina Central Station',
+      name: 'Prishtinë, Stacioni i autobusëve',
       coordinates: [42.6629, 21.1655],
       departureTime: '16:00'
     },
     to: {
-      name: 'Gjilan Bus Station',
+      name: 'Gjilan, Stacioni i autobusëve',
       coordinates: [42.4639, 21.4700],
       arrivalTime: '17:15'
     },
     intermediateStops: [
       {
-        name: 'University of Pristina',
+        name: 'Universiteti i Prishtinës',
         coordinates: [42.6477, 21.1670],
         arrivalTime: '16:10',
         departureTime: '16:15'
@@ -110,18 +110,18 @@ export const POPULAR_ROUTES: TransitRoute[] = [
     lineNumber: '3',
     color: '#8b5cf6',
     from: {
-      name: 'Pristina Railway Station',
+      name: 'Prishtinë, Stacioni hekurudhor',
       coordinates: [42.6561, 21.1465],
       departureTime: '17:00'
     },
     to: {
-      name: 'Peja Railway Station',
+      name: 'Pejë, Stacioni hekurudhor',
       coordinates: [42.6583, 20.2883],
       arrivalTime: '19:45'
     },
     intermediateStops: [
       {
-        name: 'Fushe Kosove Station',
+        name: 'Fushe Kosove, Stacion',
         coordinates: [42.6347, 21.0961],
         arrivalTime: '17:20',
         departureTime: '17:25'
@@ -141,17 +141,17 @@ export const POPULAR_ROUTES: TransitRoute[] = [
   },
   {
     id: 'route-4',
-    name: 'Pristina - Ferizaj',
+    name: 'Prishtinë - Ferizaj',
     type: 'bus',
     lineNumber: '4',
     color: '#f59e0b',
     from: {
-      name: 'Pristina Central Station',
+      name: 'Prishtinë, Stacioni i autobusëve',
       coordinates: [42.6629, 21.1655],
       departureTime: '07:30'
     },
     to: {
-      name: 'Ferizaj Bus Station',
+      name: 'Ferizaj, Stacioni i autobusëve',
       coordinates: [42.3703, 21.1553],
       arrivalTime: '08:15'
     },
@@ -170,17 +170,17 @@ export const POPULAR_ROUTES: TransitRoute[] = [
   },
   {
     id: 'route-5',
-    name: 'Pristina - Gjakova',
+    name: 'Prishtinë - Gjakovë',
     type: 'bus',
     lineNumber: '5',
     color: '#ec4899',
     from: {
-      name: 'Pristina Central Station',
+      name: 'Prishtinë, Stacioni i autobusëve',
       coordinates: [42.6629, 21.1655],
       departureTime: '09:00'
     },
     to: {
-      name: 'Gjakova Bus Station',
+      name: 'Gjakova, Stacioni i autobusëve',
       coordinates: [42.3856, 20.4300],
       arrivalTime: '10:45'
     },
@@ -200,7 +200,7 @@ export const POPULAR_ROUTES: TransitRoute[] = [
   },
   {
     id: 'route-6',
-    name: 'Prizren - Pristina',
+    name: 'Prizren - Prishtinë',
     type: 'bus',
     lineNumber: '6',
     color: '#6366f1',
@@ -210,7 +210,7 @@ export const POPULAR_ROUTES: TransitRoute[] = [
       departureTime: '06:30'
     },
     to: {
-      name: 'Pristina Central Station',
+      name: 'Prishtinë, Stacioni i autobusëve',
       coordinates: [42.6629, 21.1655],
       arrivalTime: '08:00'
     },

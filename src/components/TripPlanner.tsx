@@ -45,7 +45,7 @@ const TripPlanner: React.FC<TripPlannerProps> = ({ onClose }) => {
   return (
     <div className="p-4">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold">Trip Planner</h2>
+        <h2 className="text-2xl font-bold">Planifikuesi i udhëtimit</h2>
         {onClose && (
           <Button variant="ghost" size="sm" onClick={onClose}>×</Button>
         )}
@@ -54,10 +54,10 @@ const TripPlanner: React.FC<TripPlannerProps> = ({ onClose }) => {
       <form onSubmit={handleSubmit} className="mb-6">
         <div className="space-y-4">
           <div>
-            <Label htmlFor="from">From</Label>
+            <Label htmlFor="from">Nga</Label>
             <Input
               id="from"
-              placeholder="Starting point"
+              placeholder="Pika fillestare"
               value={from}
               onChange={(e) => setFrom(e.target.value)}
               required
@@ -65,10 +65,10 @@ const TripPlanner: React.FC<TripPlannerProps> = ({ onClose }) => {
           </div>
           
           <div>
-            <Label htmlFor="to">To</Label>
+            <Label htmlFor="to">Në</Label>
             <Input
               id="to"
-              placeholder="Destination"
+              placeholder="Destinacioni"
               value={to}
               onChange={(e) => setTo(e.target.value)}
               required
@@ -77,7 +77,7 @@ const TripPlanner: React.FC<TripPlannerProps> = ({ onClose }) => {
           
           <div className="flex gap-4">
             <div className="flex-1">
-              <Label htmlFor="date">Date</Label>
+              <Label htmlFor="date">Data</Label>
               <Input
                 id="date"
                 type="date"
@@ -86,7 +86,7 @@ const TripPlanner: React.FC<TripPlannerProps> = ({ onClose }) => {
               />
             </div>
             <div className="flex-1">
-              <Label htmlFor="time">Time</Label>
+              <Label htmlFor="time">Koha</Label>
               <Input
                 id="time"
                 type="time"
@@ -97,14 +97,14 @@ const TripPlanner: React.FC<TripPlannerProps> = ({ onClose }) => {
           </div>
           
           <Button type="submit" className="w-full" disabled={isLoading}>
-            {isLoading ? 'Finding Routes...' : 'Find Routes'}
+            {isLoading ? 'Duke gjetur rrugët...' : 'Gjej rrugët'}
           </Button>
         </div>
       </form>
       
       {results.length > 0 && (
         <div className="space-y-4">
-          <h3 className="text-lg font-semibold">Available Routes</h3>
+          <h3 className="text-lg font-semibold">Udhetimet e mundshme</h3>
           
           {results.map((option) => (
             <Card 
@@ -148,10 +148,10 @@ const TripPlanner: React.FC<TripPlannerProps> = ({ onClose }) => {
                 {selectedOption === option.id && (
                   <div className="mt-4 flex justify-end">
                     <Button size="sm" variant="outline" className="mr-2">
-                      View Details
+                      Shiko detajet
                     </Button>
                     <Button size="sm">
-                      Buy Ticket
+                      Blej biletë
                     </Button>
                   </div>
                 )}

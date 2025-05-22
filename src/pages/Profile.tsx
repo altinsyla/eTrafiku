@@ -70,21 +70,21 @@ const Profile = () => {
         
         <Tabs defaultValue="profile" className="w-full">
           <TabsList className="mb-6">
-            <TabsTrigger value="profile">Profile Details</TabsTrigger>
-            <TabsTrigger value="tickets">My Tickets</TabsTrigger>
-            <TabsTrigger value="trips">Recent Trips</TabsTrigger>
+            <TabsTrigger value="profile">Detajet e profilit</TabsTrigger>
+            <TabsTrigger value="tickets">Biletat e mija</TabsTrigger>
+            <TabsTrigger value="trips">Udhetimet e fundit</TabsTrigger>
           </TabsList>
           
           <TabsContent value="profile">
             <div className="grid gap-6 md:grid-cols-2">
               <Card>
                 <CardHeader>
-                  <CardTitle>Personal Information</CardTitle>
+                  <CardTitle>Informacione Personale</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleProfileUpdate} className="space-y-4">
                     <div className="space-y-2">
-                      <Label htmlFor="name">Full Name</Label>
+                      <Label htmlFor="name">Emri i plotë</Label>
                       <Input
                         id="name"
                         value={name}
@@ -116,20 +116,20 @@ const Profile = () => {
                 <CardContent className="space-y-4">
                   <div>
                     <p className="text-gray-600 mb-6">
-                      Manage your account settings and preferences
+                      Menagjo të dhënat e profilit tuaj
                     </p>
                     <Button variant="outline" className="w-full mb-2">
-                      Change Password
+                      Ndrysho password-in
                     </Button>
                     <Button variant="outline" className="w-full mb-2">
-                      Notification Preferences
+                      Preferencat e njoftimeve
                     </Button>
                     <Button 
                       variant="destructive" 
                       className="w-full"
                       onClick={handleLogout}
                     >
-                      Logout
+                      Dilni
                     </Button>
                   </div>
                 </CardContent>
@@ -138,7 +138,7 @@ const Profile = () => {
           </TabsContent>
           
           <TabsContent value="tickets">
-            <h2 className="text-xl font-bold mb-4">Your Tickets</h2>
+            <h2 className="text-xl font-bold mb-4">Biletat tuaja</h2>
             {userTickets.length > 0 ? (
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {userTickets.map((ticket) => (
@@ -148,15 +148,15 @@ const Profile = () => {
             ) : (
               <Card>
                 <CardContent className="py-10 text-center">
-                  <p className="text-gray-500 mb-4">You don't have any tickets yet.</p>
-                  <Button onClick={() => navigate('/tickets')}>Buy Tickets</Button>
+                  <p className="text-gray-500 mb-4">Ju nuk keni akoma ndonje biletë.</p>
+                  <Button onClick={() => navigate('/tickets')}>Blej biletë</Button>
                 </CardContent>
               </Card>
             )}
           </TabsContent>
           
           <TabsContent value="trips">
-            <h2 className="text-xl font-bold mb-4">Recent Trips</h2>
+            <h2 className="text-xl font-bold mb-4">Udhetimet e fundit</h2>
             {recentTrips.length > 0 ? (
               <div className="space-y-4">
                 {recentTrips.map((trip) => (
@@ -170,7 +170,7 @@ const Profile = () => {
                           </p>
                         </div>
                         <Button variant="outline" size="sm">
-                          Details
+                          Detajet
                         </Button>
                       </div>
                     </CardContent>
@@ -180,8 +180,8 @@ const Profile = () => {
             ) : (
               <Card>
                 <CardContent className="py-10 text-center">
-                  <p className="text-gray-500 mb-4">No recent trips found.</p>
-                  <Button onClick={() => navigate('/planner')}>Plan a Trip</Button>
+                  <p className="text-gray-500 mb-4">Nuk kemi gjetur ndonje udhëtim</p>
+                  <Button onClick={() => navigate('/planner')}>Planifiko një udhëtim</Button>
                 </CardContent>
               </Card>
             )}

@@ -64,21 +64,21 @@ const Operator = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           <Card>
             <CardHeader className="pb-2">
-              <CardTitle className="text-lg">Total Passengers</CardTitle>
+              <CardTitle className="text-lg">Numri i pasagjerëve</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold">4,725</div>
-              <div className="text-sm text-green-600">+12% from yesterday</div>
+              <div className="text-sm text-green-600">+12% nga dita e djeshme</div>
             </CardContent>
           </Card>
           
           <Card>
             <CardHeader className="pb-2">
-              <CardTitle className="text-lg">On-Time Performance</CardTitle>
+              <CardTitle className="text-lg">Performanca në kohë</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold">93%</div>
-              <div className="text-sm text-green-600">+2% from last week</div>
+              <div className="text-sm text-green-600">+2% nga java e kaluar </div>
             </CardContent>
           </Card>
           

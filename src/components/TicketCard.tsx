@@ -61,11 +61,11 @@ const TicketCard: React.FC<TicketCardProps> = ({ ticket, onUseTicket }) => {
       <CardContent>
         <div className="text-sm text-gray-600 mb-4">
           <div className="flex justify-between mb-1">
-            <span>Purchase Date:</span>
+            <span>Data e blerjes:</span>
             <span>{formatDate(ticket.purchaseDate)}</span>
           </div>
           <div className="flex justify-between">
-            <span>Valid Until:</span>
+            <span>Valide deri në:</span>
             <span>{formatDate(ticket.expirationDate)}</span>
           </div>
         </div>
@@ -83,7 +83,7 @@ const TicketCard: React.FC<TicketCardProps> = ({ ticket, onUseTicket }) => {
               className="w-full mt-3"
               onClick={() => setShowQR(false)}
             >
-              Hide QR Code
+              Fsheh QR Code
             </Button>
           </div>
         ) : (
@@ -94,7 +94,7 @@ const TicketCard: React.FC<TicketCardProps> = ({ ticket, onUseTicket }) => {
               onClick={() => setShowQR(true)}
               disabled={ticket.isUsed || isExpired}
             >
-              Show QR Code
+              Shfaq QR Code
             </Button>
             {!ticket.isUsed && !isExpired && onUseTicket && (
               <Button 
@@ -102,7 +102,7 @@ const TicketCard: React.FC<TicketCardProps> = ({ ticket, onUseTicket }) => {
                 variant="secondary"
                 onClick={() => onUseTicket(ticket)}
               >
-                Use Ticket
+                Perdor bileten
               </Button>
             )}
           </div>
