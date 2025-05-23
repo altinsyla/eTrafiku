@@ -2,6 +2,7 @@
 e-Trafiku është një platformë digjitale që synon të revolucionarizojë përvojën e udhëtarëve në Kosovë duke ofruar informacion në kohë reale për transportin publik, një asistent digjital për planifikim udhëtimi dhe një sistem të centralizuar për komunikim me operatorët e transportit.
 
 **Problemi qe zgjedhim**
+
 ❌ Mungesa e informacionit në kohë reale për autobusët dhe trenat
 ❌ Udhëtarët presin pa ditur nëse ka vonesa apo ndalesa
 ❌ Nuk ekziston një asistent digjital për t’i ndihmuar qytetarët
