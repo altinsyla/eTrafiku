@@ -67,9 +67,7 @@ const generateResponse = (message: string): string => {
     }
   }
   const defaultResponses = [
-    'Jam këtu për t’ju ndihmuar me nevojat tuaja për transport. Mund të më jepni më shumë detaje?',
-    'Mund t’ju ndihmoj me informata për linja, orare dhe bileta. Çka dëshironi të dini?',
-    'Mos hezitoni të pyesni për ndonjë linjë, orar apo shërbim specifik që ofrojmë në Kosovë.'
+    'Nga Prishtina mund të arrini në Mitrovicë për rreth 90 minuta me autobus.',
   ];
   return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
 };
