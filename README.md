@@ -18,17 +18,17 @@ e-Trafiku është një platformë digjitale që synon të revolucionarizojë pë
 - Oraret e autobusëve dhe trenave
 - Vonesat dhe ndryshimet në rrugë
 - Çmimet e biletave
-- 
+
 🔄 Integrim i të dhënave nga operatorët e transportit për të ndërtuar një sistem të përditësuar dhe të besueshëm
 📱 Ndërfaqe e lehtë për përdoruesit me funksione si:
 - Kërkim orari
 - Planifikim rruge
 - Njoftime direkte për vonesa ose ndalesa
-- 
+
 🧩 Platformë modulare që mund të zgjerohet me kohë, duke përfshirë:
 - Transportin urban dhe rural
 - Trenat dhe forma të tjera të transportit publik
-- 
+
 📢 Pjesëmarrja e qytetarëve:
 -Feedback për përmirësime
 - Raportim i problemeve në kohë reale
