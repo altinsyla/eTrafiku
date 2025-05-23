@@ -4,9 +4,13 @@ e-Trafiku është një platformë digjitale që synon të revolucionarizojë pë
 **Problemi qe zgjedhim**
 
 ❌ Mungesa e informacionit në kohë reale për autobusët dhe trenat
+
 ❌ Udhëtarët presin pa ditur nëse ka vonesa apo ndalesa
+
 ❌ Nuk ekziston një asistent digjital për t’i ndihmuar qytetarët
+
 ❌ Sistemi për blerje biletash dhe raportim të ankesave është i fragmentuar ose inekzistent
+
 ❌ Pa të dhëna, nuk mund të ketë optimizim apo përmirësim të shërbimeve
 
 **Zgjidhja jone**
