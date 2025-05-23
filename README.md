@@ -1,73 +1,56 @@
-# Welcome to your Lovable project
+**e-Trafiku – Transporti Publik i Zgjuar në Kosovë**
+e-Trafiku është një platformë digjitale që synon të revolucionarizojë përvojën e udhëtarëve në Kosovë duke ofruar informacion në kohë reale për transportin publik, një asistent digjital për planifikim udhëtimi dhe një sistem të centralizuar për komunikim me operatorët e transportit.
 
-## Project info
+**Problemi qe zgjedhim**
+❌ Mungesa e informacionit në kohë reale për autobusët dhe trenat
+❌ Udhëtarët presin pa ditur nëse ka vonesa apo ndalesa
+❌ Nuk ekziston një asistent digjital për t’i ndihmuar qytetarët
+❌ Sistemi për blerje biletash dhe raportim të ankesave është i fragmentuar ose inekzistent
+❌ Pa të dhëna, nuk mund të ketë optimizim apo përmirësim të shërbimeve
 
-**URL**: https://lovable.dev/projects/c9d0562f-eb70-462d-81b8-ff99773f8077
+**Zgjidhja jone**
+🤖 Asistent AI që ofron përgjigje në kohë reale për:
+- Oraret e autobusëve dhe trenave
+- Vonesat dhe ndryshimet në rrugë
+- Çmimet e biletave
+- 
+🔄 Integrim i të dhënave nga operatorët e transportit për të ndërtuar një sistem të përditësuar dhe të besueshëm
+📱 Ndërfaqe e lehtë për përdoruesit me funksione si:
+- Kërkim orari
+- Planifikim rruge
+- Njoftime direkte për vonesa ose ndalesa
+- 
+🧩 Platformë modulare që mund të zgjerohet me kohë, duke përfshirë:
+- Transportin urban dhe rural
+- Trenat dhe forma të tjera të transportit publik
+- 
+📢 Pjesëmarrja e qytetarëve:
+-Feedback për përmirësime
+- Raportim i problemeve në kohë reale
 
-## How can I edit this code?
+**🚀 Objektivat Afatgjata**
+Rritja e efikasitetit të transportit publik
+- Përmirësimi i transparencës dhe besueshmërisë
+- Zvogëlimi i kohës së pritjes në stacione
+- Digjitalizimi i përvojës së udhëtimit për çdo qytetar
 
-There are several ways of editing your application.
+**🛠️ Teknologjitë që përdorim**
+- Python / JavaScript (për backend dhe frontend)
+- API për integrim të të dhënave nga operatorët e transportit
+- Machine Learning për rekomandime të zgjuara dhe parashikime të vonesave
+- Chatbot me AI për ndihmë të shpejtë
 
-**Use Lovable**
+**Hapat e instalimit**
+1. Bejme clone projektin
+   git clone https://github.com/etrafiku/e-trafiku.git
+   cd e-trafiku
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c9d0562f-eb70-462d-81b8-ff99773f8077) and start prompting.
+2. Bejme instalimin e paketave
+   npm install
 
-Changes made via Lovable will be committed automatically to this repo.
+3. Per t'a leshuar projektin
+   npm run dev
+   
+**🤝 Kontribuo ose Bashkëpuno**
+Na kontaktoni nëse jeni të interesuar të kontribuoni në projekt, të jeni partner teknik apo të ndihmoni në testim me përdorues të vërtetë. Ky projekt është për qytetarët – nga qytetarët.
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c9d0562f-eb70-462d-81b8-ff99773f8077) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
